@@ -27,7 +27,7 @@ class Homepage extends Component {
                 <Link to="/store">
                     <img
                         id="homegif"
-                        src="https://static.boredpanda.com/blog/wp-content/uploads/2017/01/i-Tried-to-Make-Van-Gogh-Paintings-full-of-life-and-these-are-the-results-5875759f1a199__605.gif"
+                        src="https://cdn.shopify.com/s/files/1/2145/7059/products/SafeSpace_sticker_1000x.gif?v=1604899004"
                         alt="art gif"
                         //   width="500"
                         //   height="600"
