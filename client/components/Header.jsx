@@ -38,7 +38,7 @@ class Header extends Component {
                             alt=""
                             id="main-logo"
                         /> */}
-            <h1 id="main-title">Black Market Art</h1>
+            <h1 id="main-title">Safe Space</h1>
           </NavLink>
         </div>
         <div className="header-group">
