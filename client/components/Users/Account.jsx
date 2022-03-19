@@ -65,7 +65,7 @@ class Account extends Component {
         this.props.logout();
     }
 
-    handleSubmit(firstName, lastName, pronouns,email, username) {
+    handleSubmit(firstName, lastName, pronouns, email, username) {
         const { updateUser } = this.props;
         const { id } = this.props.user;
 

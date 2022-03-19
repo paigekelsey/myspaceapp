@@ -46,9 +46,8 @@ router.post("/", async (req, res, next) => {
         if (!password) throw badSyntax("User needs a password property");
 
         const newUser = await Users.create({
-            firstName: "Default",
-            lastName: "Default",
-            pronouns: "please choose",
+    
+            pronouns,
             email,
             username,
             password,
@@ -100,8 +99,8 @@ router.put("/:id", async (req, res, next) => {
         // If no user, 404
         if (!user) throw notFound("User not found");
 
-        // if (firstName) user.firstName = firstName;
-        // if (lastName) user.lastName = lastName;
+        if (firstName) user.firstName = firstName;
+        if (lastName) user.lastName = lastName;
         if(pronouns) user.pronouns = pronouns;
         if (username) user.username = username;
         if (email) user.email = email;

@@ -20,6 +20,7 @@ class UserDialogue extends Component {
             id: props.id,
             firstName: props.firstName,
             lastName: props.lastName,
+            pronouns: props.pronouns,
             username: props.username,
             email: props.email,
             userType: props.userType,
@@ -42,6 +43,7 @@ class UserDialogue extends Component {
             close,
             firstName,
             lastName,
+            pronouns,
             username,
             email,
             userType,
@@ -54,6 +56,7 @@ class UserDialogue extends Component {
             this.setState({
                 firstName,
                 lastName,
+                pronouns,
                 username,
                 email,
                 userType,
@@ -68,6 +71,7 @@ class UserDialogue extends Component {
             id,
             firstName,
             lastName,
+            pronouns,
             email,
             username,
             userType,
@@ -106,6 +110,18 @@ class UserDialogue extends Component {
                             type="name"
                             name="lastName"
                             value={lastName}
+                            fullWidth
+                            onChange={this.handleChange}
+                        />
+                    </DialogContent>
+                    <DialogContent>
+                        <TextField
+                            margin="dense"
+                            id="pronouns"
+                            label="Pronouns"
+                            type="text"
+                            name="pronouns"
+                            value={pronouns}
                             fullWidth
                             onChange={this.handleChange}
                         />
@@ -156,6 +172,7 @@ class UserDialogue extends Component {
                                     id,
                                     firstName,
                                     lastName,
+                                    pronouns,
                                     email,
                                     username,
                                     userType,
