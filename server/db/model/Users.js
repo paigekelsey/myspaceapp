@@ -20,17 +20,11 @@ const Users = db.define("users", {
   },
   firstName: {
     type: DataTypes.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
+    allowNull: true,
   },
   lastName: {
     type: DataTypes.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
+    allowNull: true,
   },
   pronouns: {
     type: DataTypes.STRING,

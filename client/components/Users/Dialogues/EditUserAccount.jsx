@@ -100,7 +100,7 @@ class EditUserAccount extends Component {
                             margin="dense"
                             id="pronouns"
                             label="Pronouns"
-                            type="pronouns"
+                            type="text"
                             name="pronouns"
                             value={pronouns}
                             fullWidth
@@ -139,7 +139,7 @@ class EditUserAccount extends Component {
                         </Button>
                         <Button
                             onClick={() =>
-                                submit(firstName, lastName, email, username)
+                                submit(firstName, lastName, pronouns, email, username)
                             }
                             color="primary"
                         >

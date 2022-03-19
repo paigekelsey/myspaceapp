@@ -74,12 +74,13 @@ class AdminUsers extends Component {
         });
     }
 
-    async handleSubmitPost(id, firstName, lastName, email, username, userType) {
+    async handleSubmitPost(id, firstName, lastName, pronouns,email, username, userType) {
         const { addUser } = this.props;
 
         await addUser({
             firstName,
             lastName,
+            pronouns,
             username,
             email,
             userType,
@@ -133,13 +134,14 @@ class AdminUsers extends Component {
         });
     }
 
-    async handleSubmit(id, firstName, lastName, email, username, userType) {
+    async handleSubmit(id, firstName, lastName,pronouns, email, username, userType) {
         const { updateUser } = this.props;
 
         await updateUser({
             id,
             firstName,
             lastName,
+            pronouns,
             username,
             email,
             userType,
@@ -215,6 +217,7 @@ class AdminUsers extends Component {
                     {...{
                         firstName: "",
                         lastName: "",
+                        pronouns: "",
                         email: "",
                         username: "",
                         userType: "",
@@ -252,6 +255,7 @@ class AdminUsers extends Component {
                                     <td>{user.id}</td>
                                     <td>{user.firstName}</td>
                                     <td>{user.lastName}</td>
+                                    <td>{user.pronouns}</td>
                                     <td>{user.email}</td>
                                     <td>{user.username}</td>
                                     <td>{user.userType}</td>

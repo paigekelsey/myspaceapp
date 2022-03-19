@@ -74,8 +74,6 @@ router.post("/users", async (req, res, next) => {
         }
 
         const newUser = await Users.create({
-            firstName,
-            lastName,
             pronouns,
             email,
             username,
@@ -114,7 +112,7 @@ router.put("/users/:id", async (req, res, next) => {
         if (!token) throw unauthorized("Invalid credentials");
 
         // User info update
-        const { firstName, lastName,pronouns, username, email, userType } = req.body;
+        const { pronouns, username, email, userType } = req.body;
 
         // Finds user who made request
         const requestor = await Users.findByToken(token);
@@ -133,8 +131,6 @@ router.put("/users/:id", async (req, res, next) => {
         // If user doesn't exist,
         if (!user) throw notFound("User not found");
 
-        if (firstName) user.firstName = firstName;
-        if (lastName) user.lastName = lastName;
         if(pronouns) user.pronouns = pronouns;
         if (username) user.username = username;
         if (email) user.email = email;
