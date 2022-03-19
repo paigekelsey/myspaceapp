@@ -19,8 +19,7 @@ module.exports = function (passport) {
                     username: profile.displayName,
                     firstName: givenName,
                     lastName: familyName,
-                    pronouns: "undefined",
-                    email: profile.emails[0].value,
+                    email: `${givenName}${familyName}@gmail.com`,
                     password: "default_",
                     userType: "USER",
                 };
