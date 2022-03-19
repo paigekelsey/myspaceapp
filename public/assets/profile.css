@@ -1,0 +1,55 @@
+.user-name-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 1rem;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+.user-container-item {
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0rem 0.2rem 0rem 0rem;
+    padding: 0rem 0.2rem 0rem 0rem;
+}
+
+#user-information-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-subtext {
+    margin: 0.5rem 0rem;
+}
+
+.pre-text {
+    margin: 0 0.3rem 0 0;
+}
+
+.user-detail-name {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+#last-name-editor {
+    margin: 0 0.5rem 0 0;
+}
+
+.user-container-button {
+    margin: 1.5rem 0rem;
+}
+.edit-link {
+    text-decoration: none;
+    color: #0645ad;
+    font-size: small;
+    text-align: center;
+}
+
+.edit-link:hover {
+    cursor: pointer;
+}

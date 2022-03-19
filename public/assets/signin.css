@@ -1,0 +1,100 @@
+.primary-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    font-size: small;
+}
+
+.form-container {
+    background-color: white;
+    min-width: 40vh;
+    max-width: 40vh;
+    min-height: 20vh;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 20px -7px rgba(0, 0, 0, 0.58);
+    margin: 1vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+}
+
+#sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 1rem;
+    width: 90%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem;
+}
+
+.form-control small {
+    visibility: hidden;
+    margin: 0.1rem;
+    color: #e74c3c;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: grey;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+label {
+    margin: 0.2rem;
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid lightgray;
+    background-color: #fbfcfa;
+    border-radius: 0.3rem;
+    outline: none;
+}
+
+.submit-btn {
+    align-self: center;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px #313131;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:active {
+    cursor: pointer;
+    transform: translateY(0px) scale(0.98, 0.98);
+    transition: all 0.1s;
+}
+
+#already-signed-in {
+    font-size: large;
+}

@@ -1,0 +1,74 @@
+#admin-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.order-icon {
+    filter: invert(31%) sepia(60%) saturate(2764%) hue-rotate(129deg)
+        brightness(93%) contrast(102%);
+    width: 1rem;
+    height: auto;
+}
+
+.edit-img {
+    filter: invert(68%) sepia(67%) saturate(938%) hue-rotate(171deg)
+        brightness(94%) contrast(90%);
+    width: 1rem;
+    height: auto;
+}
+
+.edit-img:hover {
+    cursor: pointer;
+    filter: invert(34%) sepia(30%) saturate(1472%) hue-rotate(158deg)
+        brightness(100%) contrast(94%);
+}
+
+.delete-img {
+    filter: invert(26%) sepia(95%) saturate(5156%) hue-rotate(344deg)
+        brightness(82%) contrast(98%);
+    width: 1rem;
+    height: auto;
+}
+
+.delete-img:hover {
+    cursor: pointer;
+    filter: invert(9%) sepia(46%) saturate(7469%) hue-rotate(347deg)
+        brightness(102%) contrast(94%);
+}
+
+.img-container-admin-orders {
+    text-align: center;
+    padding: 0rem 0.3rem;
+}
+
+tbody:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td,
+th {
+    padding: 8px;
+}
+
+#admin-table td,
+#admin-table th {
+    max-width: 15rem;
+}
+
+.product-img {
+    width: 3rem;
+    height: auto;
+}
+
+.product-link-admin {
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.product-link-admin:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
