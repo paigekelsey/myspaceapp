@@ -10,7 +10,7 @@ module.exports = function (passport) {
             {
                 clientID: process.env.CLIENT_ID,
                 clientSecret: process.env.CLIENT_SECRET,
-                callbackURL: "/api/auth/google/callback",
+                callbackURL: "http://mysafe-space.herokuapp.com/api/auth/google/callback",
                 passReqToCallback: true,
             },
             async (req, accessToken, refreshToken, profile, done) => {
