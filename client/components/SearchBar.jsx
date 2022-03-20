@@ -16,7 +16,7 @@ const SearchBar = (products) => {
             <div id="store-banner">
                 <img
                     className="store-banner-img"
-                    src="/images/artwork/banner.jpeg"
+                    src="https://res.cloudinary.com/teepublic/image/private/s--OHa3r8SX--/c_crop,x_10,y_10/c_fit,h_645/c_crop,g_north_west,h_827,w_1127,x_-297,y_-91/l_misc:transparent_1260/fl_layer_apply,g_north_west,x_-363,y_-303/c_mfit,g_north_east,u_misc:tapestry-l-s-gradient/e_displace,fl_layer_apply,x_0,y_34/l_upload:v1507037315:production:blanks:uue6kkaylik55suzvwsb/fl_layer_apply,g_north_west,x_0,y_0/b_rgb:000000/c_limit,f_jpg,h_630,q_90,w_630/v1569179511/production/designs/6055223_0.jpg"
                     alt=""
                 />
             </div>

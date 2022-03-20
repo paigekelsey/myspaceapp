@@ -13,8 +13,9 @@ body {
 }
 
 .store-banner-img {
-  width: 100%;
+  width: 400px;
   height: auto;
+  margin-left:38%;
 }
 
 #app {
